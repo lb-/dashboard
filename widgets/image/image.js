@@ -4,6 +4,7 @@ import Widget from '../../assets/javascripts/widget';
 import './image.scss';
 
 const placeholder = '/assets/images/placeholder.png';
+// const placeholder = '/assets/images/lb-logo.png';
 
 Widget.mount(class Image extends Widget {
   image() {
