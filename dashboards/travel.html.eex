@@ -4,65 +4,57 @@
         data-col="1"
         data-sizex="1"
         data-sizey="1">
-      <div class="widget-image"
+      <div class="widget-logo"
            data-widget="Image"
            data-source="logo"></div>
     </li>
 
-    <li data-row="1" data-col="1" data-sizex="2" data-sizey="1">
-      <div class="widget-welcome"
+    <li data-row="1"
+        data-col="2"
+        data-sizex="2"
+        data-sizey="1">
+      <div class="widget-city"
            data-widget="Text"
-           data-source="text"
-           data-title="Hi"
-           data-text="This is your shiny new dashboard."
-           data-moreinfo="Protip: You can drag the widgets around!"></div>
+           data-title="Current City"
+           data-source="city"></div>
+    </li>
+
+    <li data-row="1"
+        data-col="4"
+        data-sizex="1"
+        data-sizey="1">
+      <div class="widget-clock"
+           data-widget="Clock"></div>
+    </li>
+
+    <li data-row="2"
+        data-col="1"
+        data-sizex="2"
+        data-sizey="1">
+      <div class="widget-flights"
+           data-widget="List"
+           data-source="flights"
+           data-unordered="false"
+           data-title="Flights Taken"></div>
     </li>
 
     <li data-row="2"
         data-col="3"
         data-sizex="1"
         data-sizey="1">
-      <div class="widget-clock"
-           data-widget="Clock"
-           data-source="random"
-           data-title="Synergy"
-           data-min="0"
-           data-max="100"></div>
-    </li>
-
-    <li data-row="2"
-        data-col="4"
-        data-sizex="1"
-        data-sizey="2">
-      <div class="widget-buzzwords"
-           data-source="buzzwords"
-           data-widget="List"
-           data-unordered="true"
-           data-title="Buzzwords"
-           data-moreinfo="# of times said around the office"></div>
-    </li>
-
-    <li data-row="2"
-        data-col="1"
-        data-sizex="1"
-        data-sizey="1">
       <div class="widget-valuation"
            data-widget="Number"
-           data-source="random"
-           data-title="Current Valuation"
-           data-moreinfo="In billions"
-           data-prefix="$"></div>
+           data-source="countries"
+           data-title="Countries Visited"></div>
     </li>
 
-    <li data-row="2"
-        data-col="2"
-        data-sizex="2"
-        data-sizey="1">
-      <div class="widget-convergence"
-           data-widget="Graph"
-           data-source="convergence"
-           data-graph-type="area"
-           data-title="Convergence"></div>
+    <li data-row="2" data-col="4" data-sizex="1" data-sizey="1">
+      <div class="widget-welcome"
+           data-widget="Text"
+           data-title="LB &amp; Bec Travel Dashboard"
+           data-text="This is a fun dashboard to show you where we are in the world right now."
+           data-moreinfo="Protip: You can drag the widgets around!"></div>
     </li>
+
   </ul>
 </div>
