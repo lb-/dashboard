@@ -14,13 +14,13 @@ defmodule Dashboard.Mixfile do
   #
   # Type `mix help compile.app` for more information.
   def application do
-    [applications: [:logger, :kitto]]
+    [applications: [:logger, :kitto, :httpoison]]
   end
 
   # Specifies your project dependencies.
   #
   # Type `mix help deps` for examples and options.
   defp deps do
-    [{:kitto, "~> 0.4.0"}]
+    [{:kitto, "~> 0.4.0"}, {:poison, "~> 3.0"}, {:httpoison, "~> 0.10.0"}]
   end
 end
