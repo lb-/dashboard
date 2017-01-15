@@ -72,6 +72,5 @@ job :city, every: {30, :minutes} do
   # If you use one of our APIs or data, you're required to link back to us at every page or in every app screen you use the data on.
 
   city = City.JSONFetch.fetch("ho-chi-minh-city-vietnam")
-  city |> IO.inspect
   broadcast! :city, %{title: "#{city.name}, #{city.country}", text: city.weather, moreinfo: "Data from nomadlist.com API"}
 end
