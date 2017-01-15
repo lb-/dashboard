@@ -15,7 +15,7 @@ defmodule City.JSONFetch do
   #https://hackernoon.com/elixir-console-application-with-json-parsing-lets-print-to-console-b701abf1cb14#.vr0hnkluz
 
   defp nomad_list_city_url(nomad_list_city_slug) do
-    "https://nomadlist.com/api/v2/list/cities/#{nomad_list_city_slug}"
+    "https://nomadlist.com/api/v2/list/cities/#{nomad_list_city_slug}/"
   end
 
   def handle_json({:ok, %{status_code: 200, body: body}}) do
@@ -24,6 +24,13 @@ defmodule City.JSONFetch do
 
   def handle_json({_, %{status_code: _, body: _}}) do
     IO.puts "Something went wrong, please check your internet connection"
+  end
+
+  # City.JSONFetch.handle_json({:error, %HTTPoison.Error{id: nil, reason: :nxdomain}})
+
+  def handle_json({:error, %{id: _, reason: reason}}) do
+    IO.puts "Error - yay something"
+    IO.warn reason
   end
 
 end
