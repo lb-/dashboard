@@ -24,7 +24,8 @@
         data-sizex="1"
         data-sizey="1">
       <div class="widget-clock"
-           data-widget="Clock"></div>
+           data-widget="Clock"
+           data-moreinfo="Time in Ho Chi Minh City"></div>
     </li>
 
     <li data-row="2"
@@ -52,9 +53,8 @@
       <div class="widget-welcome"
            data-widget="Text"
            data-title="LB &amp; Bec Travel Dashboard"
-           data-text="This is a fun dashboard to show you where we are in the world right now."
+           data-text="Know a little about where we are now."
            data-moreinfo="Protip: You can drag the widgets around!"></div>
     </li>
-
   </ul>
 </div>
