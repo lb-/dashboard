@@ -1,5 +1,7 @@
 # Dashboard
 
+## Development
+
 To start your Dashboard:
 
   * Install dependencies with `mix deps.get`
@@ -8,7 +10,9 @@ To start your Dashboard:
 
 Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
 
-Ready to run in production? Please [check our deployment guides](https://github.com/kittoframework/kitto#deployment).
+## Deployment
+
+ * `git push heroku master`
 
 ## Learn more
 
