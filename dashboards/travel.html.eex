@@ -16,6 +16,7 @@
       <div class="widget-city"
            data-widget="Text"
            data-title="Current City"
+           data-text="Ho Chi Minh City, Vietnam"
            data-source="city"></div>
     </li>
 
