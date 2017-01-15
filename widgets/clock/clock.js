@@ -31,8 +31,6 @@ Widget.mount(class Clock extends Widget {
         s = Clock.formatTime(s);
     var utc = today.getTime() + (today.getTimezoneOffset() * 60000);
     var today_in_tz = new Date(utc + (3600000 * offset));
-    console.log(today_in_tz);
-
     return {
       time: (h + ":" + m + ":" + s),
       date: today.toDateString(),
