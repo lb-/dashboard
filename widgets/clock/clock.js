@@ -1,6 +1,4 @@
 import React from 'react';
-import moment from 'moment';
-// import 'moment-timezone';
 import Widget from '../../assets/javascripts/widget';
 
 import './clock.scss';
@@ -18,18 +16,23 @@ Widget.mount(class Clock extends Widget {
       <div className={this.props.className}>
         <h1 className="date">{this.state.date}</h1>
         <h2 className="time">{this.state.time}</h2>
+        <p className="more-info">{this.state.moreinfo || this.props.moreinfo}</p>
       </div>
     );
   }
   static formatTime(i) { return i < 10 ? "0" + i : i; }
   static dateTime() {
+    var offset = '+7.0';
     var today = new Date(),//moment().tz("America/Toronto").toDate(),
         h = today.getHours(),
         m = today.getMinutes(),
         s = today.getSeconds(),
         m = Clock.formatTime(m),
         s = Clock.formatTime(s);
-    console.log(moment()); //next step - make this use timezone
+    var utc = today.getTime() + (today.getTimezoneOffset() * 60000);
+    var today_in_tz = new Date(utc + (3600000 * offset));
+    console.log(today_in_tz);
+
     return {
       time: (h + ":" + m + ":" + s),
       date: today.toDateString(),
